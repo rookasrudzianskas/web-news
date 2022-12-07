@@ -5,4 +5,4 @@ export const fetchNews = async (category?: Category | string, keywords?: string,
 }
 
 
-// stepzen import curl http://api.mediastack.com/v1/news?access_key=c6c7156b60404163b8e625d0c8dc455d&sources=business,sports
+// stepzen import curl http://api.mediastack.com/v1/news?access_key=--your-api-key-here--&sources=business,sports
