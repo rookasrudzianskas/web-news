@@ -45,8 +45,25 @@ export const fetchNews = async (category?: Category | string, keywords?: string,
         headers: {
             'Content-Type': 'application/json',
             Authorization: `Apikey ${process.env.STEPZEN_API_KEY}`
-        }
+        },
+        body: JSON.stringify({
+            query,
+            variables: {
+                access_key: process.env.MEDIASTACK_API_KEY,
+                categories: category,
+                keywords: keywords,
+            },
+        })
     })
+
+
+    console.log("LOADING NEW DATA FROM API");
+    console.log("CATEGORY: " + category);
+    console.log("KEYWORDS: " + keywords);
+
+    const newsResponse = await res.json();
+
+
 }
 
 
