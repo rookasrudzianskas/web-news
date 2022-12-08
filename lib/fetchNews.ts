@@ -58,7 +58,7 @@ export const fetchNews = async (category?: Category | string, keywords?: string,
     })
 
 
-    console.log("LOADING NEW DATA FROM API");
+    // console.log("LOADING NEW DATA FROM API");
     // console.log("CATEGORY: " + category);
     // console.log("KEYWORDS: " + keywords);
 
