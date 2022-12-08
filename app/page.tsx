@@ -1,6 +1,7 @@
 import React from 'react';
 import {categories} from "../constants";
 import {fetchNews} from "../lib/fetchNews";
+import NewsList from "./NewsList";
 
 const HomeScreen = async ({}) => {
 
@@ -8,7 +9,7 @@ const HomeScreen = async ({}) => {
 
     return (
         <div>
-
+            <NewsList news={news}/>
         </div>
     );
 };
